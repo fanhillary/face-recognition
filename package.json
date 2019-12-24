@@ -5,6 +5,8 @@
   "dependencies": {
     "clarifai": "^2.9.1",
     "cors": "^2.8.5",
+    "knex": "^0.20.4",
+    "pg": "^7.15.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-particles-js": "^2.7.0",
