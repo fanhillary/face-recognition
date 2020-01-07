@@ -19,7 +19,7 @@ class Register extends React.Component {
     }
 
     onSubmitRegister = () => {
-        fetch('http://localhost:3000/register', {
+        fetch('https://salty-chamber-07816.herokuapp.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -29,7 +29,7 @@ class Register extends React.Component {
             })
         }).then(response => response.json())
         .then(user => {
-            if (user) {
+            if (user !== "unable to register") {
                 this.props.onRouteChange('home');
                 this.props.loadUser(user);
             }
